@@ -19,8 +19,8 @@ function onMessageToEdwardSnowden (message) {
 
   var text = message.text;
   var anonymousUser = "Edward Snowden";
-  var ed = './ed.jpg';
-  var picture = 'http://placehold.it/40/ed.jpg';
+  var ed = 'ed.jpg';
+  var picture = 'http://placehold.it/40/'+ ed;
 
   var response = {
     text: text,
