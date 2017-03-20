@@ -15,25 +15,16 @@ function onMessageToEdwardSnowden (message) {
   // do not listen to bots
   if (message.subtype === 'bot_message') {
     return;
-  }
-
-  function randomUsername () {
-    return Math.random().toString(36).substring(2);
-  }
-
-  function randomHexColor() {
-    return Math.random().toString(16).substring(2, 2+6);
-  }
+  } 
 
   var text = message.text;
-  var anonymousUser = randomUsername();
-  var someColor = randomHexColor();
-  var anonymousIcon = 'http://placehold.it/80/' + someColor + '/'+ someColor;
+  var anonymousUser = "Edward Snowden";
+  var picture = "https://drive.google.com/open?id=0B5T0RJWDEvEETXE0UGhKbTE2Zlk"
 
   var response = {
     text: text,
     username: anonymousUser,
-    icon_url: anonymousIcon
+    icon_url: picture
   };
 
   // post message to #random
