@@ -19,7 +19,7 @@ function onMessageToEdwardSnowden (message) {
 
   var text = message.text;
   var anonymousUser = "Edward Snowden";
-  var picture = "http://imgur.com/a/9ZrkA";
+  var picture = 'http://imgur.com/a/9ZrkA';
 
   var response = {
     text: text,
