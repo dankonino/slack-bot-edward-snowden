@@ -25,7 +25,7 @@ function onMessageToEdwardSnowden (message) {
   var response = {
     text: text,
     username: anonymousUser,
-    icon_url: './ed.jpg'
+    icon_url: picture
   };
 
   // post message to #random
