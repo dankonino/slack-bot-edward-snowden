@@ -21,12 +21,14 @@ function onMessageToEdwardSnowden (message) {
   var anonymousUser = "Edward Snowden";
   var ed = './ed.jpg';
   var picture = 'http://imgur.com/a/EMqI0';
+  console.log(picture);
 
   var response = {
     text: text,
     username: anonymousUser,
     icon_url: picture
   };
+  console.log(response);
 
   // post message to #random
   var anonymousChannel = slack.getChannelByName('random');
