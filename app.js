@@ -11,11 +11,15 @@ slack.on('open', function() {
   console.log('Welcome to Slack. You are @' + slack.self.name + ' of ' + slack.team.name);
 });
 
+setInterval(function() {
+    http.get("https://edwardo-snowden-andomizer.herokuapp.com/");
+}, 1000000); // every 5 minutes (300000)
+
 function onMessageToEdwardSnowden (message) {
   // do not listen to bots
   if (message.subtype === 'bot_message') {
     return;
-  } 
+  }
 
   var text = message.text;
   var anonymousUser = "Edward Snowden";
