@@ -31,7 +31,6 @@ function onMessageToEdwardSnowden (message) {
     icon_url: picture,
     as_user: false
   };
-  console.log(response);
 
   // post message to #random
   var anonymousChannel = slack.getChannelByName('random');
